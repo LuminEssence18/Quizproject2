@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.game-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #222, #000);
+    overflow: hidden;
+}
+
+.poster {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 100px;
+    height: 150px;
+    background: gray;
+    border: 3px solid black;
+    transition: transform 0.5s;
+}
+
+.door {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    background: #444;
+    transition: transform 0.5s;
+}
+
+.computer-screen {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
+
+.question-box {
+    margin-bottom: 20px;
+}
+
+.answer-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.answer-buttons button:hover {
+    background-color: #777;
+}
